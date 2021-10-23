@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home</title>
+<h1 style="color: royalblue;">WELCOME</h1>
+<style>
+ body{
+   background-image: url('/static/Home.jpg');
+   background-size: cover;
+   text-align: center;
+   font-weight: bold;
+   font-size: 25px;
+   
+  }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: rgb(5, 111, 160);
+  color: rgb(148, 5, 5);
+}
+
+
+</style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a class="active" href="Home">Home</a>
+    <a href="Add_Data">Add_Data</a>
+    <a href="student_info">Get_Data</a>
+  </div>
+
+<div style="padding-left:16px">
+  <p>{% block content %}{% endblock %}</p>
+</div>
+
+<P>
+THE STUDENTS<br><br>
+         All the information you need about the student in this student database....
+</P>
+
+<br><br>
+ <a style="border:red ;" href="/">Go back to home page</a>
+
+</body>
+</html>
